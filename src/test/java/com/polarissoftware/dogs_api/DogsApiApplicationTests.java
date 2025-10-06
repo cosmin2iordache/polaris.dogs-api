@@ -1,0 +1,13 @@
+package com.polarissoftware.dogs_api;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class DogsApiApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

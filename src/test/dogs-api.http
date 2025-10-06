@@ -1,0 +1,55 @@
+### 🐾 1 Get all dogs
+GET http://localhost:8080/api/dogs/dogs
+Accept: application/json
+
+
+### 🐾 2 Get dog by ID
+GET http://localhost:8080/api/dogs/dogs/10
+Accept: application/json
+
+
+### 🐾 3 Create new dog
+POST http://localhost:8080/api/dogs/dogs
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "RexTest",
+  "breed": "German Shepherd",
+  "badgeId": "B123",
+  "kennellingCharacteristic": "FRIENDLY",
+  "supplierId": 1,
+  "supplierName": "Happy Paws Ltd",
+  "gender": "MALE",
+  "birthDate": "2022-01-05",
+  "dateAcquired": "2023-03-15",
+  "currentStatus": "IN_TRAINING"
+}
+
+
+### 🐾 4 Update existing dog
+PUT http://localhost:8080/api/dogs/dogs/13
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Rex Updated",
+  "breed": "Belgian Malinois",
+  "badgeId": "B123",
+  "kennellingCharacteristic": "ACTIVE",
+  "supplierId": 1,
+  "gender": "MALE",
+  "birthDate": "2022-01-05",
+  "dateAcquired": "2023-03-15",
+  "currentStatus": "IN_TRAINING"
+}
+
+
+### 🐾 5 Soft delete a dog
+DELETE http://localhost:8080/api/dogs/dogs/13
+Accept: application/json
+
+
+### 🐾 6 Get all suppliers
+GET http://localhost:8080/api/dogs/suppliers
+Accept: application/json
