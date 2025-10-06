@@ -1,9 +1,9 @@
 package com.polarissoftware.dogs_api.dto;
 
-import com.polarissoftware.dogs_api.entity.CurrentStatus;
-import com.polarissoftware.dogs_api.entity.Gender;
-import com.polarissoftware.dogs_api.entity.KennellingCharacteristic;
-import com.polarissoftware.dogs_api.entity.LeavingReason;
+import com.polarissoftware.dogs_api.enums.CurrentStatus;
+import com.polarissoftware.dogs_api.enums.Gender;
+import com.polarissoftware.dogs_api.enums.KennellingCharacteristic;
+import com.polarissoftware.dogs_api.enums.LeavingReason;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

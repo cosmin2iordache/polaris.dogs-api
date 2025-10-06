@@ -1,15 +1,15 @@
 ### 🐾 1 Get all dogs
-GET http://localhost:8080/api/dogs/dogs
+GET http://localhost:8080/api/dogs/all
 Accept: application/json
 
 
 ### 🐾 2 Get dog by ID
-GET http://localhost:8080/api/dogs/dogs/10
+GET http://localhost:8080/api/dogs/dog/10
 Accept: application/json
 
 
 ### 🐾 3 Create new dog
-POST http://localhost:8080/api/dogs/dogs
+POST http://localhost:8080/api/dogs/save
 Content-Type: application/json
 Accept: application/json
 
@@ -28,7 +28,7 @@ Accept: application/json
 
 
 ### 🐾 4 Update existing dog
-PUT http://localhost:8080/api/dogs/dogs/13
+PUT http://localhost:8080/api/dogs/update/13
 Content-Type: application/json
 Accept: application/json
 
@@ -46,10 +46,11 @@ Accept: application/json
 
 
 ### 🐾 5 Soft delete a dog
-DELETE http://localhost:8080/api/dogs/dogs/13
+DELETE http://localhost:8080/api/dogs/delete/13
 Accept: application/json
 
 
 ### 🐾 6 Get all suppliers
 GET http://localhost:8080/api/dogs/suppliers
 Accept: application/json
+

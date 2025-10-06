@@ -1,5 +1,9 @@
 package com.polarissoftware.dogs_api.entity;
 
+import com.polarissoftware.dogs_api.enums.CurrentStatus;
+import com.polarissoftware.dogs_api.enums.Gender;
+import com.polarissoftware.dogs_api.enums.KennellingCharacteristic;
+import com.polarissoftware.dogs_api.enums.LeavingReason;
 import jakarta.persistence.*;
 import lombok.*;
 import java.time.LocalDate;
