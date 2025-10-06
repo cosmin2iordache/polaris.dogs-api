@@ -1,8 +1,6 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com.polarissoftware.dogs-api' is invalid and this project uses 'com.polarissoftware.dogs_api' instead.
-
 # Getting Started
 
 ### Reference Documentation
