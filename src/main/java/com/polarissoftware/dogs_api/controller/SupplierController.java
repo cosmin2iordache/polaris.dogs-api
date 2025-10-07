@@ -17,17 +17,14 @@ import java.util.List;
 public class SupplierController {
     private final SupplierService supplierService;
 
-
     public SupplierController(SupplierService supplierService) {
         this.supplierService = supplierService;
     }
-
 
     @GetMapping(path = "")
     public ResponseEntity<List<SupplierDTO>> list() {
         return ResponseEntity.ok(supplierService.list());
     }
-
 
     @PostMapping(path = "", consumes = "application/json", produces = "application/json")
     public ResponseEntity<SupplierDTO> create(@RequestBody SupplierDTO dto) {

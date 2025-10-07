@@ -1,7 +1,28 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-# Getting Started
+A RESTful API for managing dogs, suppliers, and their associated details.  
+Built with **Spring Boot**, **Flyway**, **JPA**, and **H2** (for development).
+
+# How To Run
+* > ./mvnw clean install
+* > ./mvnw spring-boot:run
+
+## H2 database client:
+* > credentials in application.properties: http://localhost:8080/h2-console
+
+## HTTP endpoints calls: 
+* > src/test/dogs-api.http
+
+## Features
+
+- CRUD operations for dogs and suppliers
+- Soft deletion support
+- Filtering and pagination using JPA Specifications
+- Automatic database migrations via Flyway
+- In-memory H2 database for local testing
+- DTO-based mapping with MapStruct
+- Enum-based domain modeling (Gender, CurrentStatus, etc.)
 
 ### Reference Documentation
 For further reference, please consider the following sections:

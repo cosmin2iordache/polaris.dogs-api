@@ -17,28 +17,23 @@ public class DogSpecification {
         return (root, query, cb) -> {
             var conjunction = cb.conjunction();
 
-
             if (filters == null) return conjunction;
-
 
             String name = filters.get("name");
             if (name != null && !name.isBlank()) {
                 conjunction = cb.and(conjunction, cb.like(cb.lower(root.get("name")), "%" + name.toLowerCase() + "%"));
             }
 
-
             String breed = filters.get("breed");
             if (breed != null && !breed.isBlank()) {
                 conjunction = cb.and(conjunction, cb.like(cb.lower(root.get("breed")), "%" + breed.toLowerCase() + "%"));
             }
-
 
             String supplier = filters.get("supplier");
             if (supplier != null && !supplier.isBlank()) {
                 Join<Dog, Supplier> join = root.join("supplier");
                 conjunction = cb.and(conjunction, cb.like(cb.lower(join.get("name")), "%" + supplier.toLowerCase() + "%"));
             }
-
 
             return conjunction;
         };
